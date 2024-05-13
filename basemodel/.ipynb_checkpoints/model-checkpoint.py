@@ -3,7 +3,6 @@ import json
 import wave
 import moviepy.editor as m_ed
 from typing import Callable, Union
-from IPython.display import Audio
 import whisperx
 import cv2
 import numpy as np
@@ -89,7 +88,7 @@ class BaseAutoDubbingModel:
         return result["segments"]
 
 
-# Using example
+# UExample usage
 base_input_path = '/input_path_dir'
 base_output_path = '/output_path_dir'
 input_video_path = f"{base_input_path}/input_video.mp4"
